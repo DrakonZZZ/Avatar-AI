@@ -20,7 +20,9 @@ export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
-        <body className={`${inter.className} ${poppin.variable}`}>
+        <body
+          className={`${inter.className} ${poppin.variable} bg-secondary/20`}
+        >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             {children}
           </ThemeProvider>
