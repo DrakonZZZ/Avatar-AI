@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className="p-0.5 rounded-md bg-gradient-to-r from-rose-500 to-purple-500">
           <Button size="sm" variant="prime">
             Unlock
-            <Unlock className="h-3 w-3 text-white ml-2 font-poppin" />
+            <Unlock className="h-3 w-3 text-primary ml-2 font-poppin" />
           </Button>
         </div>
       </div>

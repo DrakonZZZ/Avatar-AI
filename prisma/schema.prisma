@@ -10,4 +10,24 @@ datasource db {
 model Category{
   id String @id @default(uuid())
   name String 
+  avatar Avatar[]
+}
+
+model Avatar{
+  id String @id @default(uuid())
+  name String @db.Text
+  description String
+  userID String
+  userName String
+  imgSrc String
+  flags String @db.Text
+  seed String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  categoryID String
+  category Category @relation(fields: [categoryID], references: [id])
+
+  @@index([categoryID])
 }

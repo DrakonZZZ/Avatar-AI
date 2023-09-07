@@ -27,12 +27,11 @@ const Category = ({ data }) => {
     <div className="w-full flex justify-end space-x-2 p-2 overflow-x-auto">
       {data.map((item) => {
         const { name, id } = item;
-
         return (
           <button
             key={id}
             className={`flex items-center text-center bg-primary/10 rounded-md px-2 py-2 text-xs md:text-sm  md:px-4 md:py-3 hover:opacity-75 transition         ${
-              id === searchCateID ? 'bg-pink-600/50' : 'bg-primary/10'
+              id === searchCateID ? 'bg-pink-600/60' : 'bg-primary/10'
             }`}
             onClick={() => clickHandler(id)}
           >
