@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { CldUploadButton as Cloudbutton } from 'next-cloudinary';
 import Image from 'next/image';
 
-const ImageUploader = ({ value, changehandler, check }) => {
+const ImageUploader = ({ value, changehandler, disabled }) => {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
